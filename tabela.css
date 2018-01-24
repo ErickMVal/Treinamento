@@ -1,0 +1,23 @@
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    background-color:#99ffcc;
+}
+th, td {
+    padding: 5px;
+    text-align: center;
+}
+td {
+    background-color:#aac78e;
+}
+td.darker {
+    background-color:#7ba154;
+}
+h1{
+    font-weight: bold;
+    background-color: grey;
+    background-size: auto;
+}
+#salario{
+    text-align: right;
+}
