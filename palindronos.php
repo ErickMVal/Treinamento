@@ -1,7 +1,7 @@
 <?php
 
-$numInicial = readline("Digite um número: ");
-$numFinal = readline("Digite outro número: ");
+$numInicial = (int)$_GET['n1'];//readline("Digite um número: ");
+$numFinal = (int)$_GET['n2'];//readline("Digite outro número: ");
 if($numInicial >= 0 && $numFinal > $numInicial && is_int($numFinal)) {
     for ($num = $numInicial; $num <= $numFinal; $num++) {
         $sNum = (string)$num;

@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<head>
+    <link rel="stylesheet" href="Divs.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div>
+       <div class="div1 quadrado"></div>
+       <div class="div2 quadrado"></div>
+       <div class="div3 quadrado"></div>
+       <div class="div4 quadrado"></div>
+    </div>
+    <div class="button">
+        <button id="acao" class="button">Randomize</button>
+    </div>
+    <script>
+        var tempo = 0;
+        var batata = function () {
+            var numero = Math.floor((Math.random() * 4) + 1);
+            $('.quadrado').hide();
+            $('.div' + numero).show();
+            tempo += 1;
+            if (tempo > 30){
+                tempo = 0;
+                $('#acao').show();
+                $('.quadrado').show();
+                return;
+            }
+            setTimeout(batata, 500);
+        }
+
+        $('#acao').on('click', function (evt) {
+            evt.preventDefault();
+            $(this).hide();
+            batata();
+        });
+    </script>
+</body>

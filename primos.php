@@ -5,7 +5,7 @@ Condições:
 2. Os números deverão ser impressos lado a lado, separados por espaço
 */
 
-
+echo 'teste';
 for ($numPrimo = 1; $numPrimo < 1001; $numPrimo++)
 {
     $num = gmp_prob_prime($numPrimo);
