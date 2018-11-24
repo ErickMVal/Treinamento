@@ -23,6 +23,11 @@ if (isset($_POST['dependentes'])) {
     <th>Nome</th>
     <th>Nascimento</th>
     </tr>
+    <tr>
+    <td>Titular</td>
+    <td><input type='text' name='nome'/></td>
+    <td><input type='text' name='nasc'/></td>
+    <tr>
     ";
     do {
         $count = $count + 1;
